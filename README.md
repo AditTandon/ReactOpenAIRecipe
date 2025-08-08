@@ -1,4 +1,4 @@
-Adit's Recipe Generator using OpenAI API and React:
+**Adit's Recipe Generator using OpenAI API and React:**
 
 To run this project with your own OpenAI API key during development:
 
