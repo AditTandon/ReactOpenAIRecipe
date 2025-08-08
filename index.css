@@ -109,3 +109,64 @@ ul.ingredients-list > li {
 .recipe-container ul li, .recipe-container ol li {
     margin-bottom: 8px;
 }
+
+.dietary-restrictions {
+    margin: 20px 0;
+}
+
+.dietary-restrictions fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 0;
+}
+
+.dietary-restrictions legend {
+    font-weight: 600;
+    padding: 0 8px;
+    color: #374151;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px 16px;
+    margin-top: 8px;
+}
+
+.dietary-restrictions label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    padding: 4px 0;
+}
+
+.dietary-restrictions input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.dietary-restrictions input[type="checkbox"]:checked {
+    background: orangered;
+    border-color: orangered;
+}
+
+.dietary-restrictions input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
